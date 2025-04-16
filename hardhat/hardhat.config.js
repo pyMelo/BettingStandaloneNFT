@@ -1,0 +1,20 @@
+// Load environment variables from .env file
+require("@nomicfoundation/hardhat-toolbox");
+const dotenv = require('dotenv');
+
+dotenv.config({path:".env"})
+
+
+module.exports = {
+  solidity: "0.8.20", // Specify the Solidity version
+  networks: {
+    sepolia: {
+      url: "https://sepolia.drpc.org",
+      accounts: [process.env.ETH_PRIVATE_KEY]    },
+  },
+  paths: {
+    sources: "./contracts", // Replace with your contracts directory path
+  },
+};  
+
+
