@@ -26,7 +26,6 @@ contract BettingStandalone is ERC721URIStorage, Ownable, VRFV2WrapperConsumerBas
 
     // chiave per usare Chainlink VRF
     // https://docs.chain.link/vrf/v2/subscription/supported-networks
-    bytes32 keyHash = 0x474e34a077df58807dbe9c96d3c009b23b3c6d0cce433e59bbf5b34f823bc56c;
     uint32 callbackGasLimit = 100000;
     uint16 requestConfirmations = 3;
     uint32 numWords = 1;
@@ -38,8 +37,8 @@ contract BettingStandalone is ERC721URIStorage, Ownable, VRFV2WrapperConsumerBas
 
     constructor(address _linkToken, address _vrfWrapper)
         ERC721("BettingStandalone", "BS")
-        VRFV2WrapperConsumerBase(_linkToken, _vrfWrapper)
         Ownable(msg.sender)
+        VRFV2WrapperConsumerBase(_linkToken, _vrfWrapper)
     {
         tokenCounter = 0;
     }
