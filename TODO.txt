@@ -1,0 +1,22 @@
+- 1 deployare il contratto ottenendo abbastanza sepolia eth
+
+- 2 cambiare il contratto sui vari script
+
+- 3 cambiare il contratto sulla subscription
+
+- 4 assicurati dell sub_id corretto
+
+- 5 aggiung il consumer a vrf (address contratto)
+
+## STEP SUCCESSIVO (ABBANDONATO CHAINLINK)
+
+- 1 Creare un sito dapp che ti permette di vedere tutti gli attributi
+
+- 2 Personalizzare il nome del token
+
+- 3 Creare il vero e proprio semi-betting
+
+- 4 Provare a generare usando AI
+
+
+// Ricorda pinata
